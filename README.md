@@ -1,4 +1,4 @@
-Project: My TO-DO list!
+_Project_ : **My TO-DO list!**
 *********************************************************************************************
 This is a simple project based on HTML, CSS and vanilla JavaScript. 
 Here you can add the things you're interested and later check them or delete accordingly.
