@@ -1,0 +1,119 @@
+body {
+    height: 100%;
+    background-image: linear-gradient(to left,red,blue);
+    color: black;
+    box-sizing: border-box;
+}
+
+h2 {
+    background: black;
+    padding: 0.5%;
+    text-align: center;
+    color: white;
+}
+
+.form {
+    margin-left: 36.5%;
+    width: 100%;
+}
+
+form input {
+    border: none;
+    padding: 1%;
+    width: 25%;
+    font-size: medium;
+}
+
+.todo-btn {
+    border: none;
+    padding: 1.1%;    
+    background: white;
+    border-radius: 10%;
+    cursor: pointer;
+    color: #ff6f47;
+    transition: all 0.3s ease;
+}
+
+.todo-btn:hover {
+    background: #ff6f47;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+  
+.todo {
+    margin: auto;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+
+}
+
+.todo li {
+    flex: 1;
+    font-size: medium;
+    width: 50%;
+    height: 30%;
+    overflow: auto;
+    padding: 3%;
+}
+
+.trashbtn {
+    border: none;
+    padding: 3%;    
+    background: white;
+    border-radius: 10%;
+    cursor: pointer;
+    color: rgba(246, 3, 3, 0.952);
+    transition: all 0.3s ease;
+}
+
+.checkbtn {
+    border: none;
+    padding: 3%;    
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(36, 146, 36);
+    color: white;
+}
+
+.trashbtn:hover {
+    color: white;
+    background: rgba(246, 3, 3, 0.952);
+}
+
+.checkbtn:hover {
+    color:rgb(36, 146, 36);
+    background-color: white;
+}
+
+/*As it only when we wanted to perform check or delete on clicking the button but it wont work
+unless we click outside the <i>tag but inside the button. Using this we can click anywhere inside button.*/
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(30deg);
+    opacity: 0;
+}
